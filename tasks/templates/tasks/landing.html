@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ahmednuur GROUP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+       .marquee {
+            background-color: white;
+           
+            padding: 10px;
+            font-size: 18px;
+            
+        }
+                .marquee-center {
+            width: 60%; /* 60% of the page width */
+            margin: 20px auto; /* Center the marquee horizontally with auto margins */
+            background-color: rgb(53, 53, 255);
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0073e6;
+        }
+
+        header nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: #0073e6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #000;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 1rem 0 2rem;
+        }
+
+        .hero button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #005bb5;
+        }
+
+        .features {
+            padding: 2rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .feature {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0073e6;
+        }
+
+        .feature p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-top: 1px solid #eaeaea;
+        }
+
+        footer p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer p a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            main h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+            }
+
+            main p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0.5rem 0;
+            line-height: 1.6;
+            }
+
+            .auth-section {
+            margin-top: 1.5rem;
+            }
+
+            .auth-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.8rem 1.2rem;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            }
+
+            .auth-link:hover {
+            background-color: #0056b3;
+            }
+            /* new header css starts here*/
+            * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #0070f3;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions .login {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.actions .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ddd;
+}
+
+.actions .start-free {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0070f3;
+}
+
+.actions .contact-us {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0073e6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.actions .contact-us:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+
+<body>
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">
+        1. Welcome to Task Manager - Your IT Partner Mahesh's <strong>Task Manager</strong> for Project Success!
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        2. Coming Soon! We are startig Mahesh Software Solutions, Multi National Company. Support Us & Keep in touch for Opening Date. Thank You!!
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        3. Contact us Email: mahesh@msiit.in
+    </marquee>
+  </div>
+    
+    <header class="header">
+        <div class="logo">Ahmednuur GROUP</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <nav class="nav-links">
+            <a href="#">Product</a>
+            <a href="#">Solutions</a>
+            <a href="#">Learn</a>
+            <a href="#">Customers</a>
+            <a href="#">Pricing</a>
+            <!-- <a href="#">Events</a>
+            <a href="#">Careers</a> -->
+            <a href="#">Careers</a>
+          </nav>
+          <div class="actions">
+            <a href="{% url 'login' %}" class="login">Log in</a>
+            <span class="divider"></span>            
+            <a href="{% url 'register' %}" class="start-free">Create new account?</a>
+            <a href="#" class="contact-us">Contact us</a>
+          </div>
+    </header>
+   
+    <section class="hero">
+        <h1>The Task Manager for Project Success</h1>
+        <p class="typing-text">Designed for teams and individuals who want to achieve more in less time.</p>        
+        <button>Get Started</button>
+    </section>
+    
+    <div class="marquee-center">
+      <marquee behavior="scroll" direction="left">
+        Coming Soon! We are startig Mahesh Software Solutions, Multi National Company. Support Us & Keep in touch for Opening Date. Thank You!!
+      </marquee>
+  </div>
+
+     <section class="features">
+        <div class="feature">
+            <h3>🚀 Fast Performance</h3>
+            <p>Enjoy lightning-fast speeds and optimized performance for all your tasks.</p>
+        </div>
+        <div class="feature">
+            <h3>🔒 Secure Solutions</h3>
+            <p>Your data is safe with us, protected by advanced security measures.</p>
+        </div>
+        <div class="feature">
+            <h3>🌍 Global Reach</h3>
+            <p>Access our services anytime, anywhere with global availability.</p>
+        </div>
+    </section>
+
+    <main>
+  <h2 class="text-3xl font-bold text-center mb-4">Why Choose Task Manager?</h2>
+  <p class="text-lg text-gray-700 mb-4 text-center">
+    Task Manager is your ultimate solution for organizing projects, tracking progress, and collaborating effectively.
+    Designed to simplify even the most complex workflows, our platform is perfect for teams and individuals who want to achieve more in less time.
+  </p>
+  <p class="text-lg text-gray-700 mb-6 text-center">
+    Discover the power of task prioritization, deadline management, and real-time collaboration, all in one intuitive tool.
+  </p>
+
+  <div class="auth-section flex justify-center space-x-4 mt-6">
+    <a href="#login" class="auth-link px-4 py-2 rounded border border-gray-300 hover:bg-gray-100">Already have an account? Log In</a>
+    <a href="#register" class="auth-link px-4 py-2 rounded border border-gray-300 hover:bg-gray-100">Create a New Account</a>
+  </div>
+</main>
+
+      
+
+    <footer>
+        <p>&copy; 2025 Task Manager. Built with ❤️ for innovation. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+
+</html>
