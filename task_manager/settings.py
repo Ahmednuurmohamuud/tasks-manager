@@ -12,7 +12,12 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-default-secret-key')
 
 DEBUG = False  # Xir Debug mode
 
-ALLOWED_HOSTS = ['tasks-manager-ppfv.onrender.com', 'www.tasks-manager-ppfv.onrender.com']
+ALLOWED_HOSTS = ['tasks-manager-ppfv.onrender.com', 'www.tasks-manager-ppfv.onrender.com', '127.0.0.1', 'localhost']
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://tasks-manager-ppfv.onrender.com',
+]
  # sax URL
 
 # Application definition
